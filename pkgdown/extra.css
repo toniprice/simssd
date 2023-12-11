@@ -1,0 +1,115 @@
+/* ========================================================================== */
+/* simssd                                                                     */
+/* https://toniprice.github.io/simssd/                                        */
+/* ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); */
+
+/* -------------------------------------------------------------------------- */
+
+/* .section.level1  */
+
+.container.template-home .page-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.container.template-home .page-header h1,
+.container.template-reference-index .page-header h1,
+.container.template-reference-topic .page-header h1 {
+  /* font-size: 2.1rem; */
+  font-size: 2.0rem;
+  width: max-content;
+  min-width: max-content;
+  margin: 0.8rem 0 0 0;
+}
+
+.container.template-home .page-header h1#multilevel-sample-size-determination--at-speed .sub-head {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-left: 0.4rem;
+  color: #989898;
+}
+
+.container.template-home .page-header h1#multilevel-sample-size-determination--at-speed .sub-head .chevron {
+  font-size: 0.8em;
+}
+
+.container.template-home .page-header img.logo {
+  margin: 0.3rem 0 0 2rem;
+  padding: 0;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.container.template-home h2,
+.container.template-reference-index h2,
+.container.template-reference-topic h2 {
+  /* font-size: 2.0rem; */
+  font-size: 1.9rem;
+  padding: 0.3rem 0 0.2rem 0;
+}
+
+.container.template-reference-index .page-header img.logo,
+.container.template-reference-topic .page-header img.logo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0.5em;
+}
+
+div#last-updated {
+  margin-top: 3em;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+div.note {
+  text-size: 0.9em;
+  font-style: italic;
+}
+
+/* .greek-lettering { */
+/*   font-family: 'IBM Plex Sans', Sans-serif; */
+/* } */
+
+/* -------------------------------------------------------------------------- */
+
+/* --- --- --- links - custom-created and from bootswatch template */
+
+/* *** NB *** Do NOT change the order of these link style rules */
+
+ul.list-unstyled a, ul.list-unstyled a:link,
+a.external-link, a.external-link:link,
+.note a, .note a:link
+a.people-link, a.people-link:link {
+  /* color: #08839B; // munsell-blue */
+  /* color: #008F81; // dark-cyan */
+  /* color: #2C848C; // teal */
+  color: #1ca899;
+  text-decoration: none;
+}
+
+/*
+ul.list-unstyled a:visited,
+a.external-link:visited,
+.note a:visited,
+a.people-link:visited {
+  background-color: transparent;
+}
+*/
+
+ul.list-unstyled a:hover, ul.list-unstyled a:active,
+a.external-link:hover, a.external-link:active,
+.note a:hover, .note a:active,
+a.people-link:hover, a.people-link:active {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2rem;
+}
+
+/* ========================================================================== */
