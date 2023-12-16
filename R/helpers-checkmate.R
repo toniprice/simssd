@@ -39,9 +39,9 @@
 #' chk_choice("avocado", valid_choices)
 #'
 #' # Use this check in a conditional statement:
-#' if (!chk_choice("avocado", valid_choices)) {
+#' if (!chk_choice("pineapple", valid_choices)) {
 #'   # Do something as a result of the failure ...
-#'   warning("Check failed.")
+#'   warning("Value 'pineapple' is not a valid option.")
 #' }
 #'
 #' \dontrun{
@@ -50,6 +50,7 @@
 #'   cli::cli_abort("{cli::cli_verbatim(attr(res, 'err_msg'))}")
 #' }
 #' }
+#'
 checkmate_chk <- function(fun) {
 
   # ------------------------------------ #

@@ -49,9 +49,9 @@ chk_choice("avocado", valid_choices, quiet = TRUE)
 chk_choice("avocado", valid_choices)
 
 # Use this check in a conditional statement:
-if (!chk_choice("avocado", valid_choices)) {
+if (!chk_choice("pineapple", valid_choices)) {
   # Do something as a result of the failure ...
-  warning("Check failed.")
+  warning("Value 'pineapple' is not a valid option.")
 }
 
 \dontrun{
@@ -60,6 +60,7 @@ if (!(res <- chk_choice("tractor", valid_choices))) {
   cli::cli_abort("{cli::cli_verbatim(attr(res, 'err_msg'))}")
 }
 }
+
 }
 \seealso{
 \code{\link[cli:cli_abort]{cli::cli_abort()}}
