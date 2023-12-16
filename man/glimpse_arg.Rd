@@ -30,8 +30,9 @@ x <- matrix(c(6.62,      4.9,     1.94,
               4.9,      -3.524,  10.5,
               100.94, -678.5,   -20.95), 3, 3)
 cli::cli_verbatim(glimpse_arg(x))
-# Or, e.g.:
+# Alternatively:
 cli::cli_inform(cli::cat_line(glimpse_arg(x)))
+
 }
 \seealso{
 \code{\link[cli:cli_verbatim]{cli::cli_verbatim()}}
