@@ -72,7 +72,8 @@ run_dtc <- function(task = "docslocalsite", seed_val = 10) {
   }
 
   if (task %in% c("gp", "all")) {
-    goodpractice::goodpractice()
+    gp_res <- goodpractice::goodpractice()
+    print(gp_res)
   }
 
   if (task %in% c("docs")) {
