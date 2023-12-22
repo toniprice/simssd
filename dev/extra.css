@@ -109,6 +109,7 @@ a.external-link:hover, a.external-link:active,
 a.people-link:hover, a.people-link:active {
   text-decoration: underline;
   text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.2rem;
 }
 
