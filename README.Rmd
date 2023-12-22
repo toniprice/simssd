@@ -25,9 +25,8 @@ knitr::opts_chunk$set(
 <br/>
 The `simssd` R package uses simulation to do
 [sample size determination](https://en.wikipedia.org/wiki/Sample_size_determination)
-or
-[SSD](https://en.wikipedia.org/wiki/Sample_size_determination)
-(the process of estimating sample size for a statistical study) and
+(SSD), the process of estimating the sample size needed for
+a statistical study, and
 [power computation](https://en.wikipedia.org/wiki/Power_of_a_test)
 for fixed effects in
 [multilevel linear regression models](https://www.bristol.ac.uk/cmm/learning/multilevel-models/).

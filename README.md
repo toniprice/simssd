@@ -3,14 +3,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 <!-- ======================================================================= -->
-<!-- Doc update timestamp: Mon 11 Dec 2023 19:20 GMT -->
+<!-- Doc update timestamp: Fri 22 Dec 2023 17:13 GMT -->
 
 # multilevel<br/>sample size<br/>determination<span class="sub-head"> <span class="chevron">\>\>\></span> at speed</span>
 
 <br/> The `simssd` R package uses simulation to do [sample size
 determination](https://en.wikipedia.org/wiki/Sample_size_determination)
-or [SSD](https://en.wikipedia.org/wiki/Sample_size_determination) (the
-process of estimating sample size for a statistical study) and [power
+(SSD), the process of estimating the sample size needed for a
+statistical study, and [power
 computation](https://en.wikipedia.org/wiki/Power_of_a_test) for fixed
 effects in [multilevel linear regression
 models](https://www.bristol.ac.uk/cmm/learning/multilevel-models/). It
@@ -95,7 +95,7 @@ to. Thank you Hadley & others at Posit   🙂
 
 <div id="last-updated">
 
-Last updated: 11 Dec 2023
+Last updated: 22 Dec 2023
 
 </div>
 
