@@ -8,7 +8,7 @@ Authors@R:
 Maintainer: Toni Price <toni.price@gmail.com>
 Description: Performs sample size determination (SSD) and power computation via
     simulation for fixed effects in multilevel linear regression models with
-    options for improving computational speed.
+    an emphasis on improving computational speed.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
