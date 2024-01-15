@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 <!-- ======================================================================= -->
-<!-- Doc update timestamp: Fri 22 Dec 2023 17:13 GMT -->
+<!-- Doc update timestamp: Mon 15 Jan 2024 17:23 GMT -->
 
 # multilevel<br/>sample size<br/>determination<span class="sub-head"> <span class="chevron">\>\>\></span> at speed</span>
 
@@ -95,7 +95,7 @@ to. Thank you Hadley & others at Posit   🙂
 
 <div id="last-updated">
 
-Last updated: 22 Dec 2023
+Last updated: 15 Jan 2024
 
 </div>
 

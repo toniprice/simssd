@@ -1,0 +1,12 @@
+---
+title: "Vignettes for simssd"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignettes for simssd}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+[Intro to simssd](intro.html)
