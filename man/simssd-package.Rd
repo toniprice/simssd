@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Performs sample size determination (SSD) and power computation via simulation for fixed effects in multilevel linear regression models with options for improving computational speed.
+Performs sample size determination (SSD) and power computation via simulation for fixed effects in multilevel linear regression models with an emphasis on improving computational speed.
 }
 \seealso{
 Useful links:
