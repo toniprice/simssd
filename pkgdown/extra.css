@@ -1,0 +1,112 @@
+/* ========================================================================== */
+/* simssd                                                                     */
+/* https://toniprice.github.io/simssd/                                        */
+/* ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); */
+
+/* -------------------------------------------------------------------------- */
+
+h1 {
+  font-size: 1.7rem;
+  width: max-content;
+  min-width: max-content;
+  margin: 0;
+  padding: 1.0rem 1.0rem 0.8rem 0;
+}
+
+h1#multilevel-sample-size-determination--at-speed .sub-head {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-left: 0.4rem;
+  color: #989898;
+}
+
+h1#multilevel-sample-size-determination--at-speed .sub-head .chevron {
+  font-size: 0.8em;
+}
+
+img.logo, .template-reference-index img.logo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0.2rem;
+}
+
+.template-home img.logo {
+  position: relative;
+  top: 0.4rem;
+}
+
+.template-reference-index img.logo {
+  position: relative;
+  bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 0.3rem 0 0.2rem 0;
+}
+
+div#last-updated {
+  margin-top: 3em;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+div.note .note-emph {
+  font-style: italic;
+}
+
+div.note .note-emph .note-head {
+  font-weight: bold;
+  color: #c23651;
+}
+
+/*
+.greek-lettering {
+  font-family: 'IBM Plex Sans', Sans-serif;
+}
+*/
+
+/* -------------------------------------------------------------------------- */
+
+/* --- --- --- links - custom-created and from bootswatch template */
+
+/* *** NB *** Do NOT change the order of these link style rules */
+
+main a, main a:link, aside a, aside a:link, footer a, footer a:link {
+  /* #08839b; (munsell-blue)   #008f81; (dark-cyan)   #2c848c; (teal)   #1ca899;   #1ca899;   #227cc8;   #227c84; */
+  color: #227c84;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
+}
+
+main a:focus, main a:hover, aside a:focus, aside a:hover, footer a:focus, footer a:hover  {
+  color: #1ca899;
+  text-decoration: none;
+}
+
+nav a, nav a:link, {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:focus, nav a:link:hover {
+  color: #25ddca;
+}
+
+a.external-link .fa-github, a.external-link .fa-github:link {
+  color: #20c2b1;
+}
+
+ a.external-link .fa-github:hover, a.external-link .fa-github:focus {
+  color: #25ddca;
+}
+
+/* ========================================================================== */

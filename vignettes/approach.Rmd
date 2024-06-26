@@ -1,0 +1,19 @@
+---
+title: "The simssd approach"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The simssd approach}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# The simssd approach
+
+[TODO: This page is a placeholder. TBC]

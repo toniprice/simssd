@@ -1,0 +1,31 @@
+url: https://toniprice.github.io/simssd/
+
+development:
+  # See https://pkgdown.r-lib.org/reference/build_site.html#development-mode
+  mode: devel
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  theme: arrow-light
+  bslib:
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto Slab"}
+    code_font: {google: "M PLUS Code Latin"}
+
+navbar:
+  # NB: This 'type' declaration is necessary to style the navbar correctly
+  type: default
+
+articles:
+- title: Basics
+  # Note: Remove the 'navbar: ~' for an index page instead of a dropdown
+  # Note: Remove the 'navbar: ~' for an index page instead of a dropdown
+  #       See https://pkgdown.r-lib.org/reference/build_articles.html
+  navbar: ~
+  # desc: Basic usage
+  contents:
+  - simssd
+  - intro
+  - parameters
+  - approach

@@ -1,0 +1,12 @@
+^simssd\.Rproj$
+^\.Rproj\.user$
+^renv$
+^renv\.lock$
+^README\.Rmd$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^pkgdown$
+^docs$
+^\.github$
+^\.lintr$
+^utils$
