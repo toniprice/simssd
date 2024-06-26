@@ -1,0 +1,80 @@
+---
+title: "Introduction to simssd"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to simssd}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Overview
+
+The `simssd` package performs sample size determination (SSD) and power
+computation via simulation for fixed effects in linear regression models,
+including generalized linear models and multilevel models.
+
+### What problem does simssd address?
+
+When using simulation to estimate sample size requirements for multilevel
+models, execution time can become impracticably slow. `simssd` implements a
+method to improve computational speed under certain circumstances.
+
+The package is designed to be extensible, offering the potential to support any
+linear regression model for which it is possible to simulate data and fit the
+model. It comes with a selection of predefined models out of the box, including
+some random effect (multilevel) models.
+
+# Background
+
+The basic idea, elaborated in
+[Writing effective and reliable Monte Carlo simulations with the SimDesign package](https://doi.org/10.20982/tqmp.16.4.p248)
+by Chalmers & Adkins, is that in order to conduct a Monte Carlo simulation
+(MCS) experiment you need a model together with three essential components:
+
+1. A mechanism for generating (simulating) data according to your model;
+2. A method for analysing any given dataset of such simulated data; and
+3. A method for summarising the results of the analysis to yield (Monte Carlo)
+estimates for your quantity of interest.
+
+You would proceed by using (1) to generate multiple independent datasets
+(usually in the region of 10,000 or more) according to your model. You would
+then use (2) to analyse each of these datasets in whichever way is relevant
+to your study purpose. The final step (3) would be to compute a summary of the
+results obtained from (2).
+
+Typically, you might be interested in investigating a number of different
+scenarios (sometimes called *conditions*), each of which require a separate MCS.
+For example, the conditions could be differing sample sizes.
+
+### How this relates to sample size determination
+
+In the context of SSD via simulation, the analysis and summary steps would
+involve estimating the power for a specific sample size (condition). You would
+then repeat this for a series of increasing sample sizes and observe how the
+power increases as you do so. In other words, given a particular model (and its
+[parameters](parameters.html)), you could use this approach to estimate which
+sample size corresponds to the required level of power and, in turn, estimate
+the sample size needed. This is, in a high-level sense, what `simssd` does.
+
+### Multilevel sample size determination
+
+For a 2-level model, where you would have two sample sizes, you could create a
+grid of unique sample size *combinations* (each being one condition) and proceed
+along the same lines, once again observing how the power curve changes.
+
+However, the process described here needs a very large number of simulations for
+multilevel models and can be extremely slow, often taking hours or even days to
+complete.
+
+In the case of 2-level models where one of the sample sizes should (or perhaps
+could) be constrained, for example due to cost considerations, `simssd` can
+implement a method to reduce the number of simulations required, thereby
+reducing the computation time needed. See [The simssd approach](approach.html)
+for more details.

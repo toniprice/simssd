@@ -1,0 +1,34 @@
+Package: simssd
+Type: Package
+Title: Faster Simulation for Multilevel Sample Size Determination (SSD)
+Version: 0.0.0.9000
+Authors@R:
+    person("Toni", "Price", , "toni.price@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9109-5011"))
+Maintainer: Toni Price <toni.price@gmail.com>
+Description: Performs sample size determination (SSD) and power computation via
+    simulation for fixed effects in multilevel linear regression models with
+    an emphasis on improving computational speed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/toniprice/simssd, https://toniprice.github.io/simssd/
+BugReports: https://github.com/toniprice/simssd/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Imports:
+    checkmate,
+    cli,
+    glue,
+    magrittr,
+    rlang
+Suggests:
+    emoji,
+    here,
+    knitr,
+    lintr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    withr
