@@ -3,4 +3,7 @@
 .RData
 .Ruserdata
 
+renv
+.Rprofile
+
 docs
