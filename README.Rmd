@@ -41,7 +41,7 @@ It has a focus on improving computational speed.
 [source code](https://github.com/toniprice/simssd/) and
 [documentation](./reference/index.html)
 are placeholders as they have not yet been published.
-Installation instructions to follow at a later date!
+Installation instructions to follow at a later date.
 
 Meanwhile, see the [Introduction to simssd](./articles/intro.html).
 </div>
