@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 <!-- ======================================================================= -->
-<!-- Doc update timestamp: Wed 26 Jun 2024 13:57 BST -->
+<!-- Doc update timestamp: Sat 13 Jul 2024 19:10 BST -->
 
 # multilevel<br/>sample size<br/>determination<span class="sub-head"> <span class="chevron">\>\>\></span> at speed</span>
 
@@ -27,7 +27,7 @@ has a focus on improving computational speed.
 code](https://github.com/toniprice/simssd/) and
 [documentation](./reference/index.html) are placeholders as they have
 not yet been published. Installation instructions to follow at a later
-date!
+date.
 
 Meanwhile, see the [Introduction to simssd](./articles/intro.html).
 
@@ -94,7 +94,7 @@ to. Thank you Hadley & others at Posit   🙂
 
 <div id="last-updated">
 
-Last updated: 26 Jun 2024
+Last updated: 13 Jul 2024
 
 </div>
 
