@@ -20,7 +20,6 @@ navbar:
 articles:
 - title: Basics
   # Note: Remove the 'navbar: ~' for an index page instead of a dropdown
-  # Note: Remove the 'navbar: ~' for an index page instead of a dropdown
   #       See https://pkgdown.r-lib.org/reference/build_articles.html
   navbar: ~
   # desc: Basic usage
