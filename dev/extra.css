@@ -18,17 +18,6 @@ h1 {
   padding: 1.0rem 1.0rem 0.8rem 0;
 }
 
-h1#multilevel-sample-size-determination--at-speed .sub-head {
-  font-size: 1.3rem;
-  font-style: italic;
-  margin-left: 0.4rem;
-  color: #989898;
-}
-
-h1#multilevel-sample-size-determination--at-speed .sub-head .chevron {
-  font-size: 0.8em;
-}
-
 img.logo, .template-reference-index img.logo {
   margin: 0;
   padding: 0;
@@ -55,15 +44,6 @@ div#last-updated {
   margin-top: 3em;
   font-style: italic;
   font-size: 0.8em;
-}
-
-div.note .note-emph {
-  font-style: italic;
-}
-
-div.note .note-emph .note-head {
-  font-weight: bold;
-  color: #c23651;
 }
 
 /*

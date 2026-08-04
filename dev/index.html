@@ -12,8 +12,8 @@
 <link rel="icon" sizes="any" href="favicon.ico">
 <link rel="manifest" href="site.webmanifest">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.10/font.css" rel="stylesheet">
+<link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.10/font.css" rel="stylesheet">
 <link href="deps/M_PLUS_Code_Latin-0.4.10/font.css" rel="stylesheet">
 <link href="deps/Roboto_Slab-0.4.10/font.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -65,24 +65,34 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="multilevel-sample-size-determination--at-speed">multilevel<br>sample size<br>determination<span class="sub-head"> <span class="chevron">&gt;&gt;&gt;</span> at speed</span>
-<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination--at-speed"></a>
+<div class="page-header"><h1 id="multilevel-sample-size-determination-zapfaster">Multilevel Sample Size Determination (⚡faster)<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination-zapfaster"></a>
 </h1></div>
-<p><br> The <code>simssd</code> R package uses simulation to do <a href="https://en.wikipedia.org/wiki/Sample_size_determination" class="external-link">sample size determination</a> (SSD), the process of estimating the sample size needed for a statistical study, and <a href="https://en.wikipedia.org/wiki/Power_of_a_test" class="external-link">power computation</a> for fixed effects in <a href="https://www.bristol.ac.uk/cmm/learning/multilevel-models/" class="external-link">multilevel linear regression models</a>. It has a focus on improving computational speed.</p>
+<p><br> The simssd R package uses simulation to do <a href="https://en.wikipedia.org/wiki/Sample_size_determination" class="external-link">sample size determination</a> (SSD) and <a href="https://en.wikipedia.org/wiki/Power_of_a_test" class="external-link">power computation</a> for fixed effects in <a href="https://www.bristol.ac.uk/cmm/learning/multilevel-models/" class="external-link">multilevel linear regression models</a>. It has a focus on improving computational speed.</p>
+<!--
+SSD = The process of estimating the sample size needed for a statistical study
+-->
 <!-- ======================================================================= -->
+<div class="section level2">
+<h2 id="project-status">Project status<a class="anchor" aria-label="anchor" href="#project-status"></a>
+</h2>
+<p>This repository contains the initial project skeleton. Development is currently on hold due to time constraints; the <a href="https://github.com/toniprice/simssd/" class="external-link">source code</a> and <a href="./reference/index.html">documentation</a> are placeholders as they have not yet been published.</p>
+<p>The project is not abandoned and I intend to continue work on it when time permits, though there is no active development at the moment.</p>
+<p>As described under <a href="#historical-context">Historical context</a>, this package was originally intended as an implementation of <a href="https://ethos.bl.uk/concern/thesis_or_dissertations/730872" class="external-link">my PhD research</a>. Since the repository was first created, the underlying research has been <a href="https://doi.org/10.3102/10769986251344939" class="external-link">extended</a>, so any future development would reflect the methods described in that work.</p>
+<p><strong>Related publication:</strong><br>
+Browne, W. J., Charlton, C. M. J., Price, T., Leckie, G., &amp; Steele, F. (2025). <strong>Optimizing the Use of Simulation Methods in Multilevel Sample Size Calculations.</strong> <em>Journal of Educational and Behavioral Statistics, 0(0).</em> <a href="https://doi.org/10.3102/10769986251344939" class="external-link">doi:10.3102/10769986251344939</a></p>
+<!-- ======================================================================= -->
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<div class="note">
-<p><span class="note-emph"><span class="note-head">Please note:</span> <code>simssd</code> is currently under construction.</span> The <a href="https://github.com/toniprice/simssd/" class="external-link">source code</a> and <a href="./reference/index.html">documentation</a> are placeholders as they have not yet been published. Installation instructions to follow at a later date.</p>
-<p>Meanwhile, see the <a href="./articles/intro.html">Introduction to simssd</a>.</p>
-</div>
+<p>Installation instructions will be provided at a later date. Meanwhile, see the <a href="./articles/intro.html">Introduction to simssd</a>.</p>
 <!-- ======================================================================= -->
 </div>
 <div class="section level2">
-<h2 id="historical-context">Historical Context<a class="anchor" aria-label="anchor" href="#historical-context"></a>
+<h2 id="historical-context">Historical context<a class="anchor" aria-label="anchor" href="#historical-context"></a>
 </h2>
-<p>The predecessor to <code>simssd</code> was developed to support my PhD research, <!-- TODO: Restore the EThOS link when EThOS is back online --> <!-- [A faster simulation approach to sample size determination for random effect models](https://ethos.bl.uk/OrderDetails.do?did=1&uin=uk.bl.ethos.730872), --> <a href="https://bris.on.worldcat.org/oclc/1052823916" class="external-link">A faster simulation approach to sample size determination for random effect models</a>, at the <a href="https://www.bristol.ac.uk/cmm/" class="external-link">Centre for Multilevel Modelling</a> (University of Bristol).</p>
+<!-- University of Bristol catalogue entry: https://bris.on.worldcat.org/oclc/1052823916 -->
+<p>The predecessor to simssd was developed to support my PhD research, <a href="https://ethos.bl.uk/concern/thesis_or_dissertations/730872" class="external-link">A faster simulation approach to sample size determination for random effect models</a>, at the <a href="https://www.bristol.ac.uk/cmm/" class="external-link">Centre for Multilevel Modelling</a> (University of Bristol).</p>
 <p>It extended ideas arising from the <a href="https://www.bristol.ac.uk/cmm/software/mlpowsim/" class="external-link">MLPowSim</a> software written by William Browne and Mousa Golalizadeh.</p>
 <!-- ======================================================================= -->
 </div>
@@ -92,12 +102,13 @@
 <p>I gratefully acknowledge funding provided for my PhD via <a href="https://www.ukri.org/councils/esrc/" class="external-link">UK Economic and Social Research Council (ESRC)</a> grant number ES/H044094/1.</p>
 <p>My thanks to the late <a href="https://www.bristol.ac.uk/cmm/team/rasbash.html" class="external-link people-link">Professor Jon Rasbash</a> for getting the original project off the ground as well as <a href="https://research-information.bris.ac.uk/en/persons/william-j-browne" class="external-link people-link">Professor William Browne</a>, <a href="https://www.lse.ac.uk/Statistics/People/Professor-Fiona-Steele" class="external-link people-link">Professor Fiona Steele, CBE</a>, <a href="https://research.manchester.ac.uk/en/persons/debora.price" class="external-link people-link">Professor Debora Price</a> and the late <a href="https://www.bristol.ac.uk/cmm/team/hg/" class="external-link people-link">Professor Harvey Goldstein</a> for their invaluable guidance and support.</p>
 <p>The <a href="https://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/mlpowsim-manual.pdf" class="external-link">MLPowSim manual</a> by William Browne, Mousa Golalizadeh and Richard Parker contains a number of motivating examples.</p>
-<p>The software design of <code>simssd</code> draws on some ideas from:<br> Chalmers RP, and Adkins, MC (2020). “Writing effective and reliable Monte Carlo simulations with the SimDesign package.” The Quantitative Methods for Psychology, 16(4), 248–280. <a href="https://doi.org/10.20982/tqmp.16.4.p248" class="external-link">doi:10.20982/tqmp.16.4.p248</a>.</p>
-<p>In an ongoing way, tools provided by <a href="https://hadley.nz/" class="external-link people-link">Hadley Wickham</a> and his colleagues at <a href="https://posit.co/" class="external-link">Posit Software, PBC</a> (formerly RStudio, PBC) enable me to develop much higher quality software in <a href="https://www.r-project.org/" class="external-link">R</a> than I otherwise would have been able to. Thank you Hadley &amp; others at Posit   🙂</p>
+<p>The software design of simssd draws on ideas from:<br>
+Chalmers RP, and Adkins, MC (2020). <strong>Writing effective and reliable Monte Carlo simulations with the SimDesign package.</strong> <em>The Quantitative Methods for Psychology, 16(4), 248–280.</em> <a href="https://doi.org/10.20982/tqmp.16.4.p248" class="external-link">doi:10.20982/tqmp.16.4.p248</a>.</p>
+<p>In an ongoing way, tools provided by <a href="https://hadley.nz/" class="external-link people-link">Hadley Wickham</a> and his colleagues at <a href="https://posit.co/" class="external-link">Posit</a> (formerly RStudio) enable me to develop much higher quality software in <a href="https://www.r-project.org/" class="external-link">R</a> than I otherwise would have been able to. Thank you Hadley &amp; others at Posit   🙂</p>
 <!-- ======================================================================= -->
 <hr>
 <div id="last-updated">
-<p>Last updated: 13 Jul 2024</p>
+<p>Last updated: 04 Aug 2026</p>
 </div>
 <!-- ======================================================================= -->
 </div>
@@ -144,7 +155,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>
