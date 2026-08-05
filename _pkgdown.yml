@@ -2,7 +2,7 @@ url: https://toniprice.github.io/simssd/
 
 development:
   # See https://pkgdown.r-lib.org/reference/build_site.html#development-mode
-  mode: devel
+  mode: unreleased
 
 template:
   bootstrap: 5
