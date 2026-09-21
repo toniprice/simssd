@@ -8,13 +8,7 @@ exclusions: list(
       undesirable_function_linter = 9:10,
       unused_import_linter = 10
     ),
-    "tests/testthat/test-helpers-checkmate.R" = list(
-      implicit_integer_linter = Inf
-    ),
     "tests/testthat/test-helpers-cli.R" = list(
-      implicit_integer_linter = Inf
-    ),
-    "tests/testthat/test-helpers-package.R" = list(
       implicit_integer_linter = Inf
     )
   )

@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(simssd)
+library(simssd) # nolint: missing_package_linter
 
 test_check("simssd")

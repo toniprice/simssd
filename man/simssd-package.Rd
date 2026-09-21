@@ -6,6 +6,8 @@
 \alias{simssd-package}
 \title{simssd: Faster Simulation for Multilevel Sample Size Determination (SSD)}
 \description{
+\if{html}{\figure{logo.svg}{options: style='float: right' alt='logo' width='120'}}
+
 Performs sample size determination (SSD) and power computation via simulation for fixed effects in multilevel linear regression models with an emphasis on improving computational speed.
 }
 \seealso{
@@ -19,6 +21,11 @@ Useful links:
 }
 \author{
 \strong{Maintainer}: Toni Price \email{placeholder@example.com} (\href{https://orcid.org/0000-0002-9109-5011}{ORCID})
+
+Authors:
+\itemize{
+  \item Toni Price \email{placeholder@example.com} (\href{https://orcid.org/0000-0002-9109-5011}{ORCID})
+}
 
 }
 \keyword{internal}

@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------------------- #
-
-utils::globalVariables("style_valid_types")
-
-# ---------------------------------------------------------------------------- #
 #' Add cli style to a vector of valid type strings
 #'
 #' Creates a formatted string of valid types from a vector of valid options.
@@ -38,7 +33,6 @@ style_valid_types <- function(vec, delim_l = "", delim_r = "",
   glue::glue("{wrap_l}{styled}{wrap_r}")
 }
 
-# ---------------------------------------------------------------------------- #
 #' Format a multiline argument for printing
 #'
 #' Formats a multiline argument for printing, retaining only a given number of
@@ -78,10 +72,8 @@ glimpse_arg <- function(arg, max_lines = 3L, bullet_theme = " ") {
 
   output <- output[seq_len(min(length(output), max_lines))]
 
-  if (nchar(n_lines_info) > 0L) output <- c(output, n_lines_info)
+  if (nzchar(n_lines_info)) output <- c(output, n_lines_info)
 
   # Use bullet_theme to set the cli::cli_bullets theme (default is an indent)
   setNames(output, rep(bullet_theme, length(output)))
 }
-
-# ---------------------------------------------------------------------------- #
