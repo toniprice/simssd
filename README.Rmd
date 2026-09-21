@@ -39,20 +39,17 @@ SSD = The process of estimating the sample size needed for a statistical study
 
 This repository contains the initial project skeleton. Development is currently
 on hold due to time constraints; the
-[source code](https://github.com/toniprice/simssd/)
-and
-[documentation](./reference/index.html) are placeholders pending publication.
-I intend to continue development when time permits, though there is no active
-work at present.
+[source code](https://github.com/toniprice/simssd/) and
+[documentation](./reference/index.html) are placeholders pending publication and
+I intend to continue development when time permits.
 
 See [Historical context](#historical-context) for background: the package began
-as an implementation of my PhD research
-[A faster simulation approach to sample size determination for random effect
-models](https://ethos.bl.uk/concern/thesis_or_dissertations/730872) and built on
-ideas from [MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since
-the repository was created the underlying research has been
-[extended](https://doi.org/10.3102/10769986251344939); any future development
-would reflect those methods.
+as an implementation of
+[my PhD research](https://ethos.bl.uk/concern/thesis_or_dissertations/730872)
+and built on ideas from
+[MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since then,
+[the underlying research has been extended](https://doi.org/10.3102/10769986251344939);
+any future development will reflect those extensions.
 
 **Related publication:** \
 Browne, W. J., Charlton, C. M. J., Price, T., Leckie, G., & Steele, F. (2025).

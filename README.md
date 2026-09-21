@@ -7,7 +7,7 @@
 
 <!-- ======================================================================= -->
 
-<!-- Doc update timestamp: Wed 05 Aug 2026 17:58 BST -->
+<!-- Doc update timestamp: Mon 21 Sep 2026 18:08 BST -->
 
 # Multilevel Sample Size Determination (⚡faster)
 
@@ -31,20 +31,18 @@ This repository contains the initial project skeleton. Development is
 currently on hold due to time constraints; the [source
 code](https://github.com/toniprice/simssd/) and
 [documentation](./reference/index.html) are placeholders pending
-publication. I intend to continue development when time permits, though
-there is no active work at present.
+publication and I intend to continue development when time permits.
 
 See [Historical context](#historical-context) for background: the
-package began as an implementation of my PhD research [A faster
-simulation approach to sample size determination for random effect
-models](https://ethos.bl.uk/concern/thesis_or_dissertations/730872) and
-built on ideas from
-[MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since the
-repository was created the underlying research has been
-[extended](https://doi.org/10.3102/10769986251344939); any future
-development would reflect those methods.
+package began as an implementation of [my PhD
+research](https://ethos.bl.uk/concern/thesis_or_dissertations/730872)
+and built on ideas from
+[MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since
+then, [the underlying research has been
+extended](https://doi.org/10.3102/10769986251344939); any future
+development will reflect those extensions.
 
-**Related publication:**  
+**Related publication:**\
 Browne, W. J., Charlton, C. M. J., Price, T., Leckie, G., & Steele, F.
 (2025). **Optimizing the Use of Simulation Methods in Multilevel Sample
 Size Calculations.** *Journal of Educational and Behavioral Statistics,
@@ -102,7 +100,7 @@ manual](https://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/mlp
 by William Browne, Mousa Golalizadeh and Richard Parker contains a
 number of motivating examples.
 
-The software design of simssd draws on ideas from:  
+The software design of simssd draws on ideas from:\
 Chalmers RP, and Adkins, MC (2020). **Writing effective and reliable
 Monte Carlo simulations with the SimDesign package.** *The Quantitative
 Methods for Psychology, 16(4), 248–280.*
@@ -121,7 +119,7 @@ to. Thank you Hadley & others at Posit   🙂
 
 <div id="last-updated">
 
-Last updated: 05 Aug 2026
+Last updated: 21 Sep 2026
 
 </div>
 
