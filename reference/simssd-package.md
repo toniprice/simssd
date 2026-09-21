@@ -18,3 +18,8 @@ Useful links:
 
 **Maintainer**: Toni Price <placeholder@example.com>
 ([ORCID](https://orcid.org/0000-0002-9109-5011))
+
+Authors:
+
+- Toni Price <placeholder@example.com>
+  ([ORCID](https://orcid.org/0000-0002-9109-5011))

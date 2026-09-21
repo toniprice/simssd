@@ -13,19 +13,19 @@
 <link rel="manifest" href="../site.webmanifest">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.10/font.css" rel="stylesheet">
-<link href="../deps/M_PLUS_Code_Latin-0.4.10/font.css" rel="stylesheet">
-<link href="../deps/Roboto_Slab-0.4.10/font.css" rel="stylesheet">
-<link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><script src="intro_files/libs/quarto-html/popper.min.js"></script><script src="intro_files/libs/quarto-html/tippy.umd.min.js"></script><link href="intro_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="intro_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
 <meta property="og:title" content="Introduction to simssd">
+<meta property="og:image" content="https://toniprice.github.io/simssd/logo.svg">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="default" aria-label="Site navigation"><div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="default" aria-label="Site navigation"><div class="container">
 
     <a class="navbar-brand me-2" href="../index.html">simssd</a>
 
@@ -59,102 +59,140 @@
 
 
   </div>
-</nav><div class="container template-article">
-
-
-
-
+</nav><div class="container template-quarto">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
+      <img src="../logo.svg" class="logo" alt=""><h1>Introduction to simssd</h1>
 
-      <h1>Introduction to simssd</h1>
-            
-      
-      <small class="dont-index">Source: <a href="https://github.com/toniprice/simssd/blob/main/vignettes/intro.Rmd" class="external-link"><code>vignettes/intro.Rmd</code></a></small>
-      <div class="d-none name"><code>intro.Rmd</code></div>
+
+      <p class="date">Last updated: 21 September, 2026</p>
+
+      <small class="dont-index">Source: <a href="https://github.com/toniprice/simssd/blob/main/vignettes/intro.qmd" class="external-link"><code>vignettes/intro.qmd</code></a></small>
+      <div class="d-none name"><code></code></div>
     </div>
 
-    
-    
-<div class="section level2">
-<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
-</h2>
-<p>The <code>simssd</code> package performs sample size determination
-(SSD) and power computation via simulation for fixed effects in linear
-regression models, including generalized linear models and multilevel
-models.</p>
-<div class="section level4">
-<h4 id="what-problem-does-simssd-address">What problem does simssd address?<a class="anchor" aria-label="anchor" href="#what-problem-does-simssd-address"></a>
+
+
+
+
+
+    <!--
+
+::: {.cell}
+
+:::
+
+--><section class="section level3"><h3 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h3>
+<p>The <code>simssd</code> package performs sample size determination (SSD) and power computation via simulation for fixed effects in linear regression models, including generalized linear models and multilevel models.</p>
+<section class="level3"><h4 id="what-problem-does-simssd-address">What problem does simssd address?<a class="anchor" aria-label="anchor" href="#what-problem-does-simssd-address"></a>
 </h4>
-<p>When using simulation to estimate sample size requirements for
-multilevel models, execution time can become impracticably slow.
-<code>simssd</code> implements a method to improve computational speed
-under certain circumstances.</p>
-<p>The package is designed to be extensible, offering the potential to
-support any linear regression model for which it is possible to simulate
-data and fit the model. It comes with a selection of predefined models
-out of the box, including some random effect (multilevel) models.</p>
-</div>
-</div>
-<div class="section level2">
-<h2 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
+<p>When using simulation to estimate sample size requirements for multilevel models, execution time can become impracticably slow. <code>simssd</code> implements a method to improve computational speed under certain circumstances.</p>
+<p>The package is designed to be extensible, offering the potential to support any linear regression model for which it is possible to simulate data and fit the model. It comes with a selection of predefined models out of the box, including some random effect (multilevel) models.</p>
+</section></section><section class="section level2"><h2 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
 </h2>
-<p>The basic idea, elaborated in <a href="https://doi.org/10.20982/tqmp.16.4.p248" class="external-link">Writing effective and
-reliable Monte Carlo simulations with the SimDesign package</a> by
-Chalmers &amp; Adkins, is that in order to conduct a Monte Carlo
-simulation (MCS) experiment you need a model together with three
-essential components:</p>
-<ol style="list-style-type: decimal">
-<li>A mechanism for generating (simulating) data according to your
-model;</li>
-<li>A method for analysing any given dataset of such simulated data;
-and</li>
-<li>A method for summarising the results of the analysis to yield (Monte
-Carlo) estimates for your quantity of interest.</li>
+<p>The basic idea, elaborated in <a href="https://doi.org/10.20982/tqmp.16.4.p248" class="external-link">Writing effective and reliable Monte Carlo simulations with the SimDesign package</a> by Chalmers &amp; Adkins, is that in order to conduct a Monte Carlo simulation (MCS) experiment you need a model together with three essential components:</p>
+<ol type="1">
+<li>A mechanism for generating (simulating) data according to your model;</li>
+<li>A method for analysing any given dataset of such simulated data; and</li>
+<li>A method for summarising the results of the analysis to yield (Monte Carlo) estimates for your quantity of interest.</li>
 </ol>
-<p>You would proceed by using (1) to generate multiple independent
-datasets (usually in the region of 10,000 or more) according to your
-model. You would then use (2) to analyse each of these datasets in
-whichever way is relevant to your study purpose. The final step (3)
-would be to compute a summary of the results obtained from (2).</p>
-<p>Typically, you might be interested in investigating a number of
-different scenarios (sometimes called <em>conditions</em>), each of
-which require a separate MCS. For example, the conditions could be
-differing sample sizes.</p>
-<div class="section level4">
-<h4 id="how-this-relates-to-sample-size-determination">How this relates to sample size determination<a class="anchor" aria-label="anchor" href="#how-this-relates-to-sample-size-determination"></a>
+<p>You would proceed by using (1) to generate multiple independent datasets (usually in the region of 10,000 or more) according to your model. You would then use (2) to analyse each of these datasets in whichever way is relevant to your study purpose. The final step (3) would be to compute a summary of the results obtained from (2).</p>
+<p>Typically, you might be interested in investigating a number of different scenarios (sometimes called <em>conditions</em>), each of which require a separate MCS. For example, the conditions could be differing sample sizes.</p>
+<section class="level3"><h4 id="how-this-relates-to-sample-size-determination">How this relates to sample size determination<a class="anchor" aria-label="anchor" href="#how-this-relates-to-sample-size-determination"></a>
 </h4>
-<p>In the context of SSD via simulation, the analysis and summary steps
-would involve estimating the power for a specific sample size
-(condition). You would then repeat this for a series of increasing
-sample sizes and observe how the power increases as you do so. In other
-words, given a particular model (and its <a href="parameters.html">parameters</a>), you could use this approach to
-estimate which sample size corresponds to the required level of power
-and, in turn, estimate the sample size needed. This is, in a high-level
-sense, what <code>simssd</code> does.</p>
-</div>
-<div class="section level4">
-<h4 id="multilevel-sample-size-determination">Multilevel sample size determination<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination"></a>
+<p>In the context of SSD via simulation, the analysis and summary steps would involve estimating the power for a specific sample size (condition). You would then repeat this for a series of increasing sample sizes and observe how the power increases as you do so. In other words, given a particular model (and its <a href="parameters.html">parameters</a>), you could use this approach to estimate which sample size corresponds to the required level of power and, in turn, estimate the sample size needed. This is, in a high-level sense, what <code>simssd</code> does.</p>
+</section><section class="level3"><h4 id="multilevel-sample-size-determination">Multilevel sample size determination<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination"></a>
 </h4>
-<p>For a 2-level model, where you would have two sample sizes, you could
-create a grid of unique sample size <em>combinations</em> (each being
-one condition) and proceed along the same lines, once again observing
-how the power curve changes.</p>
-<p>However, the process described here needs a very large number of
-simulations for multilevel models and can be extremely slow, often
-taking hours or even days to complete.</p>
-<p>In the case of 2-level models where one of the sample sizes should
-(or perhaps could) be constrained, for example due to cost
-considerations, <code>simssd</code> can implement a method to reduce the
-number of simulations required, thereby reducing the computation time
-needed. See <a href="approach.html">The simssd approach</a> for more
-details.</p>
-</div>
-</div>
-  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+<p>For a 2-level model, where you would have two sample sizes, you could create a grid of unique sample size <em>combinations</em> (each being one condition) and proceed along the same lines, once again observing how the power curve changes.</p>
+<p>However, the process described here needs a very large number of simulations for multilevel models and can be extremely slow, often taking hours or even days to complete.</p>
+<p>In the case of 2-level models where one of the sample sizes should (or perhaps could) be constrained, for example due to cost considerations, <code>simssd</code> can implement a method to reduce the number of simulations required, thereby reducing the computation time needed. See <a href="approach.html">The simssd approach</a> for more details.</p>
+</section></section><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config);
+    }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script></main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
 </div>
-
 
 
     <footer><div class="pkgdown-footer-left">

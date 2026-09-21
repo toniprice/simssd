@@ -1,6 +1,6 @@
 # Introduction to simssd
 
-## Overview
+### Overview
 
 The `simssd` package performs sample size determination (SSD) and power
 computation via simulation for fixed effects in linear regression

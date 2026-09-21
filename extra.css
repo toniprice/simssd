@@ -1,5 +1,5 @@
 /* ========================================================================== */
-/* simssd                                                                     */
+/* custom.css for simssd                                                      */
 /* https://toniprice.github.io/simssd/                                        */
 /* ========================================================================== */
 
@@ -9,36 +9,134 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap'); */
 
 /* -------------------------------------------------------------------------- */
+/* links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/* page header + logo */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  margin-top: 1rem;
+  padding-top: 0;
+}
+
+#main .section.level1 {
+  margin-top: 0;
+}
+
+#main .section.level1 .page-header {
+  margin-top: 0;
+}
+
+.page-header .logo {
+  float: none;
+  margin: 0;
+  width: 121px;
+  height: 110px;
+}
+
+#main .page-header .logo {
+  width: 110px;
+  height: 100px;
+}
+
+.page-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 h1 {
-  font-size: 1.7rem;
-  width: max-content;
-  min-width: max-content;
-  margin: 0;
-  padding: 1.0rem 1.0rem 0.8rem 0;
-}
-
-img.logo, .template-reference-index img.logo {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  bottom: 0.2rem;
-}
-
-.template-home img.logo {
-  position: relative;
-  top: 0.4rem;
-}
-
-.template-reference-index img.logo {
-  position: relative;
-  bottom: 0.4rem;
+  font-size: 1.8rem;
 }
 
 h2 {
   font-size: 1.6rem;
-  padding: 0.3rem 0 0.2rem 0;
 }
+
+/* -------------------------------------------------------------------------- */
+/* navbar */
+
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  transform: none !important;
+}
+
+.navbar {
+  background-color: #c23350 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  background-color: transparent !important;
+  font-weight: 600;
+}
+
+.navbar .nav-text {
+  color: #fff !important;
+}
+
+.navbar .fa-github {
+  font-size: 1.4rem;
+}
+
+.navbar a:has(.fa-github) {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: #fff !important;
+  /*
+  color: #decfcf !important;
+  */
+  /*
+  opacity: 0.9;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  */
+}
+
+.navbar a:has(.fa-github):hover,
+.navbar a:has(.fa-github):focus {
+  color: #fff !important;
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+.navbar .nav-item:has(.fa-github) {
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
 
 div#last-updated {
   margin-top: 3em;
@@ -51,42 +149,5 @@ div#last-updated {
   font-family: 'IBM Plex Sans', Sans-serif;
 }
 */
-
-/* -------------------------------------------------------------------------- */
-
-/* --- --- --- links - custom-created and from bootswatch template */
-
-/* *** NB *** Do NOT change the order of these link style rules */
-
-main a, main a:link, aside a, aside a:link, footer a, footer a:link {
-  /* #08839b; (munsell-blue)   #008f81; (dark-cyan)   #2c848c; (teal)   #1ca899;   #1ca899;   #227cc8;   #227c84; */
-  color: #227c84;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2rem;
-}
-
-main a:focus, main a:hover, aside a:focus, aside a:hover, footer a:focus, footer a:hover  {
-  color: #1ca899;
-  text-decoration: none;
-}
-
-nav a, nav a:link, {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:focus, nav a:link:hover {
-  color: #25ddca;
-}
-
-a.external-link .fa-github, a.external-link .fa-github:link {
-  color: #20c2b1;
-}
-
- a.external-link .fa-github:hover, a.external-link .fa-github:focus {
-  color: #25ddca;
-}
 
 /* ========================================================================== */

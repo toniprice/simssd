@@ -14,18 +14,17 @@ This repository contains the initial project skeleton. Development is
 currently on hold due to time constraints; the [source
 code](https://github.com/toniprice/simssd/) and
 [documentation](https://toniprice.github.io/simssd/reference/index.md)
-are placeholders pending publication. I intend to continue development
-when time permits, though there is no active work at present.
+are placeholders pending publication and I intend to continue
+development when time permits.
 
 See [Historical context](#historical-context) for background: the
-package began as an implementation of my PhD research [A faster
-simulation approach to sample size determination for random effect
-models](https://ethos.bl.uk/concern/thesis_or_dissertations/730872) and
-built on ideas from
-[MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since the
-repository was created the underlying research has been
-[extended](https://doi.org/10.3102/10769986251344939); any future
-development would reflect those methods.
+package began as an implementation of [my PhD
+research](https://ethos.bl.uk/concern/thesis_or_dissertations/730872)
+and built on ideas from
+[MLPowSim](https://www.bristol.ac.uk/cmm/software/mlpowsim/). Since
+then, [the underlying research has been
+extended](https://doi.org/10.3102/10769986251344939); any future
+development will reflect those extensions.
 
 **Related publication:**  
 Browne, W. J., Charlton, C. M. J., Price, T., Leckie, G., & Steele, F.
@@ -91,23 +90,11 @@ otherwise would have been able to. Thank you Hadley & others at Posit  
 
 ------------------------------------------------------------------------
 
-Last updated: 05 Aug 2026
+Last updated: 21 Sep 2026
 
 # Package index
 
 ## All functions
-
-- [`checkmate_chk()`](https://toniprice.github.io/simssd/reference/checkmate_chk.md)
-  :
-
-  Wrap a `checkmate` check to handle its output differently
-
-- [`chk_choice()`](https://toniprice.github.io/simssd/reference/chk_choice.md)
-  :
-
-  Wrap
-  [`checkmate::check_choice`](https://mllg.github.io/checkmate/reference/checkChoice.html)
-  to handle its output differently
 
 - [`glimpse_arg()`](https://toniprice.github.io/simssd/reference/glimpse_arg.md)
   : Format a multiline argument for printing

@@ -13,21 +13,19 @@
 <link rel="manifest" href="site.webmanifest">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.10/font.css" rel="stylesheet">
-<link href="deps/M_PLUS_Code_Latin-0.4.10/font.css" rel="stylesheet">
-<link href="deps/Roboto_Slab-0.4.10/font.css" rel="stylesheet">
-<link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="Faster Simulation for Multilevel Sample Size Determination (SSD)">
 <meta name="description" content="Performs sample size determination (SSD) and power computation via simulation for fixed effects in multilevel linear regression models with an emphasis on improving computational speed.">
 <meta property="og:description" content="Performs sample size determination (SSD) and power computation via simulation for fixed effects in multilevel linear regression models with an emphasis on improving computational speed.">
+<meta property="og:image" content="https://toniprice.github.io/simssd/logo.svg">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="default" aria-label="Site navigation"><div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="default" aria-label="Site navigation"><div class="container">
 
     <a class="navbar-brand me-2" href="index.html">simssd</a>
 
@@ -64,8 +62,10 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="multilevel-sample-size-determination-zapfaster">Multilevel Sample Size Determination (⚡faster)<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination-zapfaster"></a>
-</h1></div>
+<div class="page-header">
+<img src="logo.svg" class="logo" alt=""><h1 id="multilevel-sample-size-determination-zapfaster">Multilevel Sample Size Determination (⚡faster)<a class="anchor" aria-label="anchor" href="#multilevel-sample-size-determination-zapfaster"></a>
+</h1>
+</div>
 <p>The simssd R package uses simulation to perform <a href="https://en.wikipedia.org/wiki/Sample_size_determination" class="external-link">sample size determination</a> (SSD) and <a href="https://en.wikipedia.org/wiki/Power_of_a_test" class="external-link">power computation</a> for fixed effects in <a href="https://www.bristol.ac.uk/cmm/learning/multilevel-models/" class="external-link">multilevel linear regression models</a>, with an emphasis on computational speed.</p>
 <!--
 SSD = The process of estimating the sample size needed for a statistical study
@@ -74,8 +74,8 @@ SSD = The process of estimating the sample size needed for a statistical study
 <div class="section level2">
 <h2 id="project-status">Project status<a class="anchor" aria-label="anchor" href="#project-status"></a>
 </h2>
-<p>This repository contains the initial project skeleton. Development is currently on hold due to time constraints; the <a href="https://github.com/toniprice/simssd/" class="external-link">source code</a> and <a href="./reference/index.html">documentation</a> are placeholders pending publication. I intend to continue development when time permits, though there is no active work at present.</p>
-<p>See <a href="#historical-context">Historical context</a> for background: the package began as an implementation of my PhD research <a href="https://ethos.bl.uk/concern/thesis_or_dissertations/730872" class="external-link">A faster simulation approach to sample size determination for random effect models</a> and built on ideas from <a href="https://www.bristol.ac.uk/cmm/software/mlpowsim/" class="external-link">MLPowSim</a>. Since the repository was created the underlying research has been <a href="https://doi.org/10.3102/10769986251344939" class="external-link">extended</a>; any future development would reflect those methods.</p>
+<p>This repository contains the initial project skeleton. Development is currently on hold due to time constraints; the <a href="https://github.com/toniprice/simssd/" class="external-link">source code</a> and <a href="./reference/index.html">documentation</a> are placeholders pending publication and I intend to continue development when time permits.</p>
+<p>See <a href="#historical-context">Historical context</a> for background: the package began as an implementation of <a href="https://ethos.bl.uk/concern/thesis_or_dissertations/730872" class="external-link">my PhD research</a> and built on ideas from <a href="https://www.bristol.ac.uk/cmm/software/mlpowsim/" class="external-link">MLPowSim</a>. Since then, <a href="https://doi.org/10.3102/10769986251344939" class="external-link">the underlying research has been extended</a>; any future development will reflect those extensions.</p>
 <p><strong>Related publication:</strong><br>
 Browne, W. J., Charlton, C. M. J., Price, T., Leckie, G., &amp; Steele, F. (2025). <strong>Optimizing the Use of Simulation Methods in Multilevel Sample Size Calculations.</strong> <em>Journal of Educational and Behavioral Statistics, 0(0).</em> <a href="https://doi.org/10.3102/10769986251344939" class="external-link">doi:10.3102/10769986251344939</a></p>
 <!-- ======================================================================= -->
@@ -106,7 +106,7 @@ Chalmers RP, and Adkins, MC (2020). <strong>Writing effective and reliable Monte
 <!-- ======================================================================= -->
 <hr>
 <div id="last-updated">
-<p>Last updated: 05 Aug 2026</p>
+<p>Last updated: 21 Sep 2026</p>
 </div>
 <!-- ======================================================================= -->
 </div>
