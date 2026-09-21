@@ -1,0 +1,29 @@
+---
+title: "Model parameters"
+date: last-modified
+date-format: "[Last updated:] DD MMMM, YYYY"
+format: html
+# format:
+#   html:
+#     css: styles.css
+vignette: >
+  %\VignetteIndexEntry{Model parameters}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+<!--
+```{r setup, echo = FALSE}
+library(simssd)
+```
+-->
+
+## Choosing parameter values for your model
+
+*TODO:* This is a placeholder vignette

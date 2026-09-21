@@ -10,4 +10,9 @@
 # User-specific .Rprofile which is sourced from within .Rprofile if it exists
 .Rprofile_user
 
-docs
+# For vignettes
+/doc/
+/Meta/
+
+# For pkgdown website
+/docs/

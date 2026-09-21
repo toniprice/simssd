@@ -1,0 +1,32 @@
+---
+title: "The simssd approach"
+date: last-modified
+date-format: "[Last updated:] DD MMMM, YYYY"
+format: html
+# format:
+#   html:
+#     css: styles.css
+vignette: >
+  %\VignetteIndexEntry{The simssd approach}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+<!--
+```{r setup, echo = FALSE}
+library(simssd)
+```
+-->
+
+<!--
+## How simssd works
+-->
+
+*TODO:* This is a placeholder vignette

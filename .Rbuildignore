@@ -9,7 +9,10 @@
 ^docs$
 ^\.github$
 ^\.lintr$
+^vignettes/\.quarto$
 ^utils$
+^doc$
+^Meta$
 ^\.Renviron$
 ^\.Renviron\.dev$
 ^\.Rprofile_user$

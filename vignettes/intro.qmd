@@ -1,20 +1,31 @@
 ---
 title: "Introduction to simssd"
-output: rmarkdown::html_vignette
+date: last-modified
+date-format: "[Last updated:] DD MMMM, YYYY"
+format: html
+# format:
+#   html:
+#     css: styles.css
 vignette: >
   %\VignetteIndexEntry{Introduction to simssd}
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEngine{quarto::html}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, echo = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-# Overview
+<!--
+```{r setup, echo = FALSE}
+library(simssd)
+```
+-->
+
+## Overview
 
 The `simssd` package performs sample size determination (SSD) and power
 computation via simulation for fixed effects in linear regression models,

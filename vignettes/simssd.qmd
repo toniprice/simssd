@@ -1,0 +1,37 @@
+---
+title: "Getting started"
+date: last-modified
+date-format: "[Last updated:] DD MMMM, YYYY"
+format: html
+# format:
+#   html:
+#     css: styles.css
+vignette: >
+  %\VignetteIndexEntry{Getting started}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+<!--
+```{r setup, echo = FALSE}
+library(simssd)
+```
+-->
+
+<!--
+## Installation
+
+See installation instructions in the
+[simssd README](../index.html#installation).
+
+## Example usage
+-->
+
+*TODO:* This is a placeholder vignette
