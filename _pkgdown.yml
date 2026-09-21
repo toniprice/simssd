@@ -1,21 +1,29 @@
 url: https://toniprice.github.io/simssd/
 
+# See https://pkgdown.r-lib.org/reference/build_site.html#development-mode to
+# generate different sites for the development and released versions of the
+# package
+
 development:
   # See https://pkgdown.r-lib.org/reference/build_site.html#development-mode
   mode: unreleased
 
 template:
   bootstrap: 5
-  bootswatch: flatly
+  bootswatch: litera
   theme: arrow-light
+
   bslib:
-    base_font: {google: "Roboto"}
-    heading_font: {google: "Roboto Slab"}
-    code_font: {google: "M PLUS Code Latin"}
+    primary: "#287db2"
+    # base_font: {google: "Roboto"}
+    # heading_font: {google: "Roboto Slab"}
+    # code_font: {google: "M PLUS Code Latin"}
 
 navbar:
   # NB: This 'type' declaration is necessary to style the navbar correctly
   type: default
+  # logo:
+  #   src: man/figures/logo.png
 
 articles:
 - title: Basics
