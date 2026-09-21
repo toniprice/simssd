@@ -1,0 +1,7 @@
+# Project-level .Renviron for the dev profile
+
+# To set the renv environment to 'dev', copy this file to .Renviron in the root
+# of your project directory
+
+# Profile for renv (could be e.g. 'dev' or 'prod')
+RENV_PROFILE=dev

@@ -3,7 +3,11 @@
 .RData
 .Ruserdata
 
-renv
-.Rprofile
+# Note: .Renviron.dev is an example template for developers to copy and this
+#       should be under source control; however, .Renviron itself should not
+.Renviron
+
+# User-specific .Rprofile which is sourced from within .Rprofile if it exists
+.Rprofile_user
 
 docs

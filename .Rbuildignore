@@ -10,3 +10,6 @@
 ^\.github$
 ^\.lintr$
 ^utils$
+^\.Renviron$
+^\.Renviron\.dev$
+^\.Rprofile_user$
