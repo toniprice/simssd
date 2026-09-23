@@ -32,6 +32,7 @@ Config/renv/profiles/dev/dependencies:
     here,
     knitr,
     lintr,
+    nanonext,
     pkgdown,
     quarto,
     testthat (>= 3.0.0),
